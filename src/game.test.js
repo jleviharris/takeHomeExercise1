@@ -4,9 +4,11 @@ import { BLOCK_BOARD, getNextGeneration } from "./game";
 function testStillLife(inputBoard) {
   const generationTwo = getNextGeneration(inputBoard);
   const generationThree = getNextGeneration(inputBoard);
+  console.log("inputBoard ="+ JSON.stringify(inputBoard));
+  console.log("generationTwo ="+  JSON.stringify(generationTwo));
+  console.log("generationThree ="+ JSON.stringify(generationThree));
 
-  const allGenerationsAreTheSame = JSON.stringify(inputBoard) === JSON.stringify(generationTwo) === JSON.stringify(generationThree);
-  if (!allGenerationsAreTheSame) {
+  if (inputBoard !== generationTwo && inputBoard !== generationThree) {
     throw new Error('FAIL: A still life should not change across multiple generations');
   }
 
