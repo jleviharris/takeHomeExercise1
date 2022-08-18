@@ -1,0 +1,33 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "test:jest": {
+      "name": "test:jest",
+      "command": "npm run test:jest",
+      "runAtStart": false
+    },
+    "test:mocha": {
+      "name": "test:mocha",
+      "command": "npm run test:mocha",
+      "runAtStart": false
+    },
+    "test:tape": {
+      "name": "test:tape",
+      "command": "npm run test:tape",
+      "runAtStart": false
+    },
+    "test:vanilla": {
+      "name": "test:vanilla",
+      "command": "npm run test:vanilla",
+      "runAtStart": true
+    }
+  }
+}

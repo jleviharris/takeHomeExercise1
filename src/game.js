@@ -3,19 +3,21 @@
  * represents an empty row. Feel free to keep this data structure or change it to something
  * that works better for you.
  */
-export const BLOCK_BOARD = {
-  0: [],
-  1: [1,2],
-  2: [1,2],
-  3: [],
-};
+
+//changed data structure to a multidimentional array
+export const BLOCK_BOARD = [
+  [0, 0, 0, 0],
+  [0, 1, 1, 0],
+  [0, 1, 1, 0],
+  [0, 0, 0, 0],
+];
 
 export const BLINKER_BOARD = {
-  0: [],
-  1: [2],
-  2: [2],
-  3: [2],
-  4: [],
+  0: [0, 0],
+  1: [0, 1],
+  2: [0, 1],
+  3: [0, 1],
+  4: [0, 0],
 };
 
 // Implement the Game of Life here to transform the inputBoard into the outputBoard!
